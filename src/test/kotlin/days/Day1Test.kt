@@ -13,6 +13,7 @@ class Day1Test {
     @Test
     fun testPartOne() {
         assertThat(dayOne.partOne(), `is`("THIS IS"))
+        print(dayOne.partOne())
     }
 
     @Test
