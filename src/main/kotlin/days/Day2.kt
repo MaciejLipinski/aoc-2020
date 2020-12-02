@@ -1,7 +1,5 @@
 package days
 
-import kotlin.math.max
-
 class Day2 : Day(2) {
     override fun partOne(): Any {
         return inputList
