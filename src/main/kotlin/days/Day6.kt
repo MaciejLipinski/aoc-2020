@@ -41,7 +41,6 @@ data class FormGroup(val forms: List<Form>) {
 
     fun commonAnswers(): List<Char> = distinctAnswers().filter { forms.all { form -> form.answers.contains(it) } }
 
-
     companion object {
         fun from(input: String): FormGroup =
             FormGroup(input.split(" ").map { Form(it.toCharArray().toList()) })
